@@ -18,7 +18,7 @@ type Props = {};
 
 export default function Details({}: Props) {
   return (
-    <ScrollArea className="p-4 h-[calc(100vh-60px)]">
+    <ScrollArea className="px-4 pt-4 h-[calc(100vh-60px)]">
       <div className="py-3">
         <Breadcrumb>
           <BreadcrumbList>
@@ -27,16 +27,16 @@ export default function Details({}: Props) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/components">Components</BreadcrumbLink>
+              <BreadcrumbLink href="/">Tanent</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+              <BreadcrumbPage>Tanent Details</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex gap-3 ">
+      <div className="flex gap-3 pb-10gg ">
         <div className="space-y-5">
           <ContactCard
             name="Holt Debra"

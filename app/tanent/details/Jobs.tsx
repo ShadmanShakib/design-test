@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import JobItem from './JobItem';
-
+import CallSummaryCard from './CallSummryCard';
 type Props = {};
 
 export default function Jobs({}: Props) {
@@ -9,7 +9,7 @@ export default function Jobs({}: Props) {
     <Tabs defaultValue="maintain" className="w-full">
       <TabsList className="">
         <TabsTrigger value="maintain">For maintainence (2)</TabsTrigger>
-        <TabsTrigger value="inquiry">For Inquiry</TabsTrigger>
+        <TabsTrigger value="inquiry">For Inquiry (2)</TabsTrigger>
       </TabsList>
       <TabsContent value="maintain">
         <div className="space-y-3">
@@ -33,7 +33,18 @@ export default function Jobs({}: Props) {
           />
         </div>
       </TabsContent>
-      <TabsContent value="Inquiry">Change your password here.</TabsContent>
+      <TabsContent value="inquiry">
+        <div className="space-y-3">
+          <CallSummaryCard
+            date="20 Aug 2024, 01:46 PM"
+            callDescription="Holt Debra reported that their heater is turning on but not producing any heat. The AI Assistant asked about the urgency of the issue and confirmed it was a minor inconvenience but still needed timely attention. A maintenance visit has been scheduled for either after 4 PM on a weekday or at a convenient time during the weekend."
+          />
+          <CallSummaryCard
+            date="20 Aug 2024, 01:46 PM"
+            callDescription="Holt Debra reported that their heater is turning on but not producing any heat. The AI Assistant asked about the urgency of the issue and confirmed it was a minor inconvenience but still needed timely attention. A maintenance visit has been scheduled for either after 4 PM on a weekday or at a convenient time during the weekend."
+          />
+        </div>
+      </TabsContent>
     </Tabs>
   );
 }

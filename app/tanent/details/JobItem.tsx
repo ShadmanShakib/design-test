@@ -52,9 +52,9 @@ const JobItem: React.FC<CallSummaryProps> = ({
           </div>
         </div>
         <div className="bg-gray-50 rounded-md p-2">
-          <h3 className="text-lg font-medium">Call Summary</h3>
-          <p className="mt-2 text-gray-500">{callSummary}</p>
-          <Button variant="outline" className="mt-2">
+          <h3 className=" font-medium">Call Summary</h3>
+          <p className="mt-2 text-gray-500 ">{callSummary}</p>
+          <Button variant="outline" className="mt-4">
             {callDetails}
           </Button>
         </div>
