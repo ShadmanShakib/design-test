@@ -21,8 +21,8 @@ const JobItem: React.FC<CallSummaryProps> = ({
   callDetails,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-md p-4">
-      <div className="grid grid-cols-2 gap-4">
+    <div className="bg-white shadow-md rounded-md p-4 w-80 lg:w-auto">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
         <div className="bg-gray-50 p-2 rounded-md">
           <h3 className=" font-medium">Heater Malfunctioning</h3>
           <div className="mt-2 space-y-2">

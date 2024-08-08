@@ -10,7 +10,7 @@ interface ContactCardProps {
 
 const ContactCard: React.FC<ContactCardProps> = ({ name, location, phoneNumber, email }) => {
   return (
-    <div className="bg-white shadow-md rounded-md p-4 w-80">
+    <div className="bg-white shadow-md rounded-md p-4 lg:w-80">
       <div className="flex items-center space-x-4">
         <Avatar.Root className="w-12 h-12 rounded-full overflow-hidden">
           <Avatar.Image

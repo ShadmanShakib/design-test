@@ -27,7 +27,7 @@ const RentalDetails: React.FC<RentalDetailsProps> = ({
   postalCode,
 }) => {
   return (
-    <div className="bg-white shadow-md rounded-md p-4 w-80">
+    <div className="bg-white shadow-md rounded-md p-4 lg:w-80">
       <div>
         <div className="">
           <div className="flex gap-10">
