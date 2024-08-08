@@ -25,7 +25,7 @@ const JobItem: React.FC<CallSummaryProps> = ({
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
         <div className="bg-gray-50 p-2 rounded-md">
           <h3 className=" font-medium">Heater Malfunctioning</h3>
-          <div className="mt-2 space-y-2">
+          <div className="mt-2 space-y-2 text-sm">
             <div className="flex items-center justify-between">
               <span className="text-gray-500">Date</span>
               <span>{date}</span>
@@ -51,7 +51,7 @@ const JobItem: React.FC<CallSummaryProps> = ({
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 rounded-md p-2">
+        <div className="bg-gray-50 rounded-md p-2 text-sm">
           <h3 className=" font-medium">Call Summary</h3>
           <p className="mt-2 text-gray-500 ">{callSummary}</p>
           <Button variant="outline" className="mt-4">

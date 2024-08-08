@@ -36,7 +36,7 @@ export default function Details({}: Props) {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
-      <div className="flex flex-col gap-3 pb-10 md:flex-row items-center ">
+      <div className="flex flex-col gap-3 pb-10 md:flex-row items-center md:items-start ">
         <div className="space-y-5">
           <ContactCard
             name="Holt Debra"
