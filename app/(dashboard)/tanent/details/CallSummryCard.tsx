@@ -17,9 +17,9 @@ const CallSummaryCard: React.FC<CallSummaryProps> = ({ date, callDescription }) 
           </div>
         </div>
         <p className="mt-2 w-full text-gray-500">{callDescription}</p>
-      </div>
-      <div className="mt-4 flex ">
-        <Button variant="outline">Call Details</Button>
+        <div className="mt-4 flex ">
+          <Button variant="outline">Call Details</Button>
+        </div>
       </div>
     </div>
   );

@@ -8,9 +8,5 @@ type Props = {
 };
 
 export default function layout({ children }: Props) {
-  return (
-    <div>
-      <Sidebar>{children}</Sidebar>
-    </div>
-  );
+  return <div>{children}</div>;
 }
