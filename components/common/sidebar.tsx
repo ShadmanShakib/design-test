@@ -1,6 +1,8 @@
+'use client';
 import Link from 'next/link';
 import {
   Building2,
+  ChevronDown,
   CircleUser,
   Home,
   HomeIcon,
@@ -14,6 +16,7 @@ import {
   Search,
   Settings,
   ShoppingCart,
+  UserPen,
   Users,
   Users2,
   Wrench,
@@ -34,6 +37,8 @@ import { Input } from '@/components/ui/input';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import NavItem from './nav-item';
 
+import CollapsibleItem from './collapsible-item';
+
 type Props = {
   children: React.ReactNode;
 };
@@ -50,13 +55,10 @@ export default function Sidebar({ children }: Props) {
           </div>
           <div className="flex-1">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
-              <Link
-                href="/dashboard"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <NavItem href="/dashboard">
                 <Home className="h-4 w-4" />
                 Dashboard
-              </Link>
+              </NavItem>
               <Link
                 href="#"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
@@ -72,21 +74,17 @@ export default function Sidebar({ children }: Props) {
                 <Users2 className="h-4 w-4" />
                 Tanents
               </NavItem>
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
-              >
+              <NavItem href="#">
                 <MessageCircle className="h-4 w-4" />
                 Messages
                 <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
                   10
                 </Badge>
-              </Link>
-
-              <NavItem href="#">
-                <Package className="h-4 w-4" />
-                Viewings
               </NavItem>
+
+              {/* Collapsible */}
+              <CollapsibleItem />
+
               <NavItem href="#">
                 <PhoneCall className="h-4 w-4" />
                 AI Assistant
