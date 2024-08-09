@@ -19,21 +19,17 @@ import {
   ChartTooltipContent,
 } from '@/components/ui/chart';
 const chartData = [
-  { browser: 'other', visitors: 190, fill: 'gray' },
-  { browser: 'months', visitors: 300, fill: 'blue' },
+  { browser: 'other', visitors: 4, fill: 'gray' },
+  { browser: 'months', visitors: 8, fill: 'blue' },
 ];
 
 const chartConfig = {
-  visitors: {
-    label: 'Remaining',
-  },
-
   months: {
-    label: 'Edge',
+    label: 'Remaining',
     color: 'blue',
   },
   other: {
-    label: 'Other',
+    label: 'Pasted',
     color: 'hsl(var(--chart-5))',
   },
 } satisfies ChartConfig;
@@ -53,8 +49,8 @@ export default function RentalChart() {
               data={chartData}
               dataKey="visitors"
               nameKey="browser"
-              innerRadius={60}
-              strokeWidth={5}
+              innerRadius={75}
+              strokeWidth={3}
             >
               <Label
                 content={({ viewBox }) => {
@@ -78,7 +74,7 @@ export default function RentalChart() {
                         </tspan>
                         <tspan
                           x={viewBox.cx}
-                          y={(viewBox.cy || 0) + 24}
+                          y={(viewBox.cy || 0) + 15}
                           className="fill-foreground  font-bold"
                         >
                           15 days

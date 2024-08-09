@@ -53,7 +53,7 @@ const JobItem: React.FC<CallSummaryProps> = ({
         </div>
         <div className="bg-gray-50 rounded-md p-2 text-sm">
           <h3 className=" font-medium">Call Summary</h3>
-          <div className="h-40 whitespace-pre">
+          <div className="h-40 ">
             <p className="mt-2 text-gray-500 ">{callSummary}</p>
           </div>
           <Button variant="outline" className="mt-4">

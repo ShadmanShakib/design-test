@@ -11,7 +11,7 @@ export default function Jobs({}: Props) {
         <TabsTrigger value="maintain">For maintainence (2)</TabsTrigger>
         <TabsTrigger value="inquiry">For Inquiry (2)</TabsTrigger>
       </TabsList>
-      <TabsContent className="" value="maintain">
+      <TabsContent className="space-y-5" value="maintain">
         <JobItem
           date="20 Aug 2024, 01:46 PM"
           contractor="Not Assigned"
