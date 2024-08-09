@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import {
-  Bell,
   Building2,
   CircleUser,
   Home,
@@ -9,7 +8,6 @@ import {
   LogOutIcon,
   Menu,
   MessageCircle,
-  MessageCircleCode,
   Package,
   Package2,
   PhoneCall,
@@ -125,13 +123,10 @@ export default function Sidebar({ children }: Props) {
                   <Package2 className="h-6 w-6" />
                   <span className="sr-only">Acme Inc</span>
                 </Link>
-                <Link
-                  href="#"
-                  className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
-                >
+                <NavItem href="/dashboard">
                   <Home className="h-5 w-5" />
                   Dashboard
-                </Link>
+                </NavItem>
                 <Link
                   href="#"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground"

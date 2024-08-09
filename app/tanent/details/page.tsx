@@ -1,7 +1,9 @@
 import React from 'react';
 import { Sidebar } from '@/components/common';
+import { ChevronLeft } from 'lucide-react';
 import ContactCard from './ContractCard';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Button } from '@/components/ui/button';
 import Jobs from './Jobs';
 
 import {
@@ -19,7 +21,11 @@ type Props = {};
 export default function Details({}: Props) {
   return (
     <ScrollArea className="px-4 pt-4 h-[calc(100vh-60px)]">
-      <div className="py-3">
+      <div className="py-3 flex items-center gap-2">
+        <Button className="rounded-2xl" variant="ghost">
+          <ChevronLeft className="h-5 w-5" />
+          Back
+        </Button>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

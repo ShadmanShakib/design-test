@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Jobs({}: Props) {
   return (
-    <Tabs defaultValue="maintain" className="w-full">
+    <Tabs defaultValue="maintain" className="w-full bg-gray-50">
       <TabsList className="">
         <TabsTrigger value="maintain">For maintainence (2)</TabsTrigger>
         <TabsTrigger value="inquiry">For Inquiry (2)</TabsTrigger>
@@ -31,7 +31,7 @@ export default function Jobs({}: Props) {
           callDetails="View Job"
         />
       </TabsContent>
-      <TabsContent value="inquiry">
+      <TabsContent className="space-y-5" value="inquiry">
         <CallSummaryCard
           date="20 Aug 2024, 01:46 PM"
           callDescription="Holt Debra reported that their heater is turning on but not producing any heat. The AI Assistant asked about the urgency of the issue and confirmed it was a minor inconvenience but still needed timely attention. A maintenance visit has been scheduled for either after 4 PM on a weekday or at a convenient time during the weekend."
